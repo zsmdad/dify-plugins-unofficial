@@ -1,0 +1,30 @@
+identity:
+  name: scan_url
+  author: singing
+  label:
+    en_US: scan_url
+    pt_BR: scan_url
+    zh_Hans: 二维码扫描(通过URL)
+description:
+  human:
+    en_US: scan_url
+    pt_BR: scan_url
+    zh_Hans: 通过此API，用户可以上传或提供包含二维码的图像，API将解析图像中的二维码，提取其中编码的信息。
+  llm: scan_url
+parameters:
+  - name: qrcode_url
+    type: string
+    required: true
+    label:
+      en_US: qrcode image url
+      pt_BR: qrcode image url
+      zh_Hans: 二维码图片链接
+    human_description:
+      en_US: qrcode image url
+      pt_BR: qrcode image url
+      zh_Hans: 二维码图片链接
+    llm_description: qrcode image url
+    form: llm
+extra:
+  python:
+    source: tools/scan_url.py

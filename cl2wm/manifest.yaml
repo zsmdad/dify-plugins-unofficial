@@ -1,0 +1,41 @@
+version: 0.0.1
+type: plugin
+author: singing
+name: cl2wm
+label:
+  en_US: cl2wm
+  ja_JP: cl2wm
+  pt_BR: cl2wm
+  zh_Hans: 草料二维码
+description:
+  en_US: caoliao qrcode, https://cli.im
+  ja_JP: caoliao qrcode, https://cli.im
+  pt_BR: caoliao qrcode, https://cli.im
+  zh_Hans: 草料二维码, https://cli.im
+icon: icon.ico
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+plugins:
+  tools:
+    - provider/cl2wm.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-09T21:01:51.358134+08:00
+privacy: PRIVACY.md
+verified: false
+tags:
+- utilities

@@ -1,0 +1,33 @@
+identity:
+  author: singing
+  name: cl2wm
+  tags:
+  - utilities
+  label:
+    en_US: cl2wm
+    pt_BR: cl2wm
+    zh_Hans: 草料二维码
+  description:
+    en_US: caoliao qrcode, https://cli.im
+    pt_BR: caoliao qrcode, https://cli.im
+    zh_Hans: 草料二维码, https://cli.im
+  icon: icon.ico
+tools:
+  - tools/scan_url.yaml
+extra:
+  python:
+    source: provider/cl2wm.py
+credentials_for_provider:
+  token:
+    help:
+      en_US: Before using the Grass QR Code API, you need to create and obtain an API Key.
+      zh_Hans: 在使用草料二维码API之前，您需要创建和获取API Key。
+    label:
+      en_US: API Key
+      zh_Hans: API Key
+    placeholder:
+      en_US: Please input API Key
+      zh_Hans: 请输入API Key
+    required: true
+    type: secret-input
+    url: https://user.cli.im/opendata?withNav=1
